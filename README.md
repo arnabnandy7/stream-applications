@@ -1,4 +1,4 @@
-== Stream Applications
+## Stream Applications
 
 In this repository, you will find a collection of components that can meet various data integration use cases and requirements.
 
@@ -11,7 +11,7 @@ to bundle the Java functions with the other supported binder implementations.
 
 These applications can run standalone or as part of a data flow, such as the one orchestrated using Spring Cloud Data Flow.
 
-=== Project Structure
+## Project Structure
 
 The repository includes two sections - `Functions` and `Applications`. The former hosts the various Java functions, and
 the latter is for generating the standalone Spring Cloud Stream applications.
@@ -23,7 +23,7 @@ The following are the four major components of this repository.
 * https://github.com/spring-cloud/stream-applications/tree/master/applications[Spring Cloud Stream Applications]
 * https://github.com/spring-cloud/stream-applications/tree/master/applications/stream-applications-build[Docs / Tools]
 
-=== Reusable Functions
+## Reusable Functions
 
 |===
 | `java.util.Supplier` | `java.util.Function` | `java.util.Consumer`
@@ -84,7 +84,7 @@ The following are the four major components of this repository.
 |link:functions/consumer/rsocket-consumer/README.adoc[RSocket]
 |===
 
-=== Reusable Spring Cloud Stream Applications
+## Reusable Spring Cloud Stream Applications
 
 |===
 | Source | Processor | Sink
@@ -157,7 +157,7 @@ The following are the four major components of this repository.
 |link:applications/sink/rsocket-sink/README.adoc[RSocket]
 |===
 
-=== Build
+## Build
 
 You can build everything from the root of the repository.
 
@@ -167,7 +167,7 @@ However, this may not be what you are interested in since you are probably inter
 
 To build the functions and applications that you are interested in, you need to build them selectively, as shown below.
 
-==== Building Functions
+## Building Functions
 
 `./mvnw clean install -f functions`
 
@@ -176,13 +176,13 @@ For example, if you are only interested in `jdbc-supplier` and `log-consumer`, d
 
 `./mvnw clean install -pl :jdbc-suppler,:log-consumer`
 
-==== Building Stream Applications Core
+### Building Stream Applications Core
 
 If you want to re-run the common core build, you can build it with the following.
 
 `./mvnw clean install -f applications/stream-applications-core`
 
-=== Building Stream Applications
+### Building Stream Applications
 
 Let's assume that you want to build a `jdbc-source` application based on Kafka Binder in Spring Cloud Stream and Log Sink
 application based on Rabbit binder.
@@ -206,14 +206,14 @@ cd applications/sink/log-sink/apps/log-sink-rabbit
 ./mvnw clean package
 ```
 
-=== Additional Resources
+### Additional Resources
 
 Here is a list of resources where you can find out more about using and developing functions and stream applications:
 
 * link:docs/FunctionComposition.adoc[Function Composition]
 * link:docs/Contributing.adoc[Contributing a New Function or Application to this Repository]
 
-=== Code of Conduct
+### Code of Conduct
 
 Please see our https://github.com/spring-projects/.github/blob/master/CODE_OF_CONDUCT.md[Code of Conduct]
 ## GitAds Sponsored
