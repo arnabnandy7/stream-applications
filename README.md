@@ -216,4 +216,7 @@ Here is a list of resources where you can find out more about using and developi
 === Code of Conduct
 
 Please see our https://github.com/spring-projects/.github/blob/master/CODE_OF_CONDUCT.md[Code of Conduct]
-<!-- GitAds-Verify: 2FTDY8ARI6ID8ZMYGQLBTAX7OOXNJ33O -->
+## GitAds Sponsored
+[![Sponsored by GitAds](https://gitads.dev/v1/ad-serve?source=arnabnandy7/stream-applications@github)](https://gitads.dev/v1/ad-track?source=arnabnandy7/stream-applications@github)
+
+
